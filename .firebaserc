@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "nosqldb-c19e2"
+  },
+  "targets": {
+    "nosqldb-c19e2": {
+      "hosting": {
+        "nosqlDB": [
+          "nosqldb-c19e2"
+        ]
+      }
+    }
+  }
+}

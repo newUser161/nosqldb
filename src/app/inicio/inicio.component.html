@@ -1,0 +1,121 @@
+<div class="containerGlobal">
+    <mat-tab-group>
+      <mat-tab label="Maquinas"> 
+        
+        <div class="mainTable">
+
+          <table mat-table [dataSource]="maquinas" class="mat-elevation-z8">
+    
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- id Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+          
+            <!-- Monitor Column -->
+            <ng-container matColumnDef="monitor">
+              <th mat-header-cell *matHeaderCellDef> Monitor </th>
+              <td mat-cell *matCellDef="let element"> {{element.monitor}} </td>
+            </ng-container>
+    
+            <!-- RAM Column -->
+            <ng-container matColumnDef="RAM">
+              <th mat-header-cell *matHeaderCellDef> RAM </th>
+              <td mat-cell *matCellDef="let element"> {{element.RAM}} </td>
+            </ng-container>
+    
+            <!-- tecnico Column -->
+            <ng-container matColumnDef="tecnico">
+              <th mat-header-cell *matHeaderCellDef> Tecnico </th>
+              <td mat-cell *matCellDef="let element"> {{element.tecnico}} </td>
+            </ng-container>
+    
+            <!-- procedimientoID Column -->
+            <ng-container matColumnDef="procedimientoID">
+              <th mat-header-cell *matHeaderCellDef> Procedimiento # </th>
+              <td mat-cell *matCellDef="let element"> {{element.procedimientoID}} </td>
+            </ng-container>
+          
+          
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsMaquina"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsMaquina;"></tr>
+          </table>      
+        </div>
+      </mat-tab>
+      
+      <mat-tab label="Procedimientos"> 
+
+
+
+      </mat-tab>
+      <mat-tab label="Componentes">
+
+        <div class="mainTable">
+
+          <table mat-table [dataSource]="componentes" class="mat-elevation-z8">
+    
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- id Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            </ng-container>
+          
+            <!-- Tipo Column -->
+            <ng-container matColumnDef="Tipo">
+              <th mat-header-cell *matHeaderCellDef> Tipo </th>
+              <td mat-cell *matCellDef="let element"> {{element.Tipo}} </td>
+            </ng-container>
+    
+            <!-- Marca Column -->
+            <ng-container matColumnDef="Marca">
+              <th mat-header-cell *matHeaderCellDef> Marca </th>
+              <td mat-cell *matCellDef="let element"> {{element.Marca}} </td>
+            </ng-container>
+    
+            <!-- Modelo Column -->
+            <ng-container matColumnDef="Modelo">
+              <th mat-header-cell *matHeaderCellDef> Modelo </th>
+              <td mat-cell *matCellDef="let element"> {{element.Modelo}} </td>
+            </ng-container>
+    
+            <!-- Numero de Serie Column -->
+            <ng-container matColumnDef="numSerie">
+              <th mat-header-cell *matHeaderCellDef> Numero de Serie </th>
+              <td mat-cell *matCellDef="let element"> {{element.nSerie}} </td>
+            </ng-container>             
+            
+            <!-- Estado Column -->            
+            <ng-container matColumnDef="Estado" >
+              <th mat-header-cell *matHeaderCellDef> Estado </th>
+              <td mat-cell *matCellDef="let element" > {{element.Estado}} </td>
+            </ng-container>
+            
+            
+            <!-- Historial Column -->                        
+            <ng-container matColumnDef="Historial">
+              <th mat-header-cell *matHeaderCellDef> Historial </th>
+              <td mat-cell *matCellDef="let element"> {{element.Historial}} </td>
+            </ng-container>
+            
+          
+          
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsComponentes"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsComponentes"></tr>
+          </table>      
+        </div>
+
+      </mat-tab>
+    </mat-tab-group>
+  
+    
+
+
+</div>

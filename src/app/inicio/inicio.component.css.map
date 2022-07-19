@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,KAAK,EAAE,KAAK;CAEf;;AAED,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,SAAS;EAC3B,YAAY,EAAE,KAAK;EACnB,YAAY,EAAE,IAAK;CAMtB",
+    "sources": [
+        "inicio.component.scss"
+    ],
+    "names": [],
+    "file": "inicio.component.css"
+}
