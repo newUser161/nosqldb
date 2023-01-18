@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAC,SAAS;EAChB,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "dialog-del-machines.component.scss"
+    ],
+    "names": [],
+    "file": "dialog-del-machines.component.css"
+}

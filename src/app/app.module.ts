@@ -16,11 +16,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { InicioComponent } from './inicio/inicio.component'  
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogAddMachinesComponent } from './dialog-add-machines/dialog-add-machines.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule} from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatIconModule} from '@angular/material/icon'
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import { DialogdelMachinesComponent } from './dialog-del-machines/dialog-del-machines.component'
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,    
-    InicioComponent
+    InicioComponent, DialogAddMachinesComponent, DialogdelMachinesComponent,    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +49,15 @@ import { InicioComponent } from './inicio/inicio.component'
     provideStorage(() => getStorage()),
     BrowserAnimationsModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatCheckboxModule
   ],
   providers: [
     ScreenTrackingService,UserTrackingService

@@ -1,17 +1,77 @@
-mat-tab{
-    color: white;
+.mat-tab-group{    
+    background-color: green;    
     
 }
+
 
 table{
     width: 100%;
     background-color: goldenrod;    
     border-style: solid;
     border-color: grey ;
-    
-    
-    
-    
-    
 }
 
+#botonAddMaquina{
+    margin: 1%;    
+}
+
+.containerGlobal{
+    background-color: black;
+    width: auto;
+    height: 100%;
+}
+
+.floating-buttons {
+    z-index: 2;
+    // position: fixed;
+    overflow: auto;
+    top: auto;
+    left: auto;
+  }
+
+  .floating-pane-active {
+    background-color: rgba(215, 228, 230, 0.39);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-position: right;
+    background-repeat: repeat;
+  }
+  
+  .floating-pane-deactive {
+    background-color: rgba(215, 228, 230, 0.39);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-position: right;
+    background-repeat: repeat;
+    width: 30px;
+  }
+
+  .button-row {
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .action-buttons {
+    width: 20px;
+  }
+  
+  .sky_blue {
+    color: skyblue;
+  }
+  
+  .mat-column-symbol {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 10% !important;
+    width: 10% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    text-align: right;
+  }
