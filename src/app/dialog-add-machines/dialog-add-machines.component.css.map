@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,MAAM,EAAC,SAAS;EAChB,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "dialog-add-machines.component.scss"
+    ],
+    "names": [],
+    "file": "dialog-add-machines.component.css"
+}
